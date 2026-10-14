@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMT Services - Construction & Rénovation de Piscines</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>LMT <span>Services</span></h1>
+                <p>Piscines &amp; Bien-être</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h2>Votre piscine sur mesure</h2>
+                <p>Construction, rénovation et entretien de piscines haut de gamme</p>
+                <a href="#contact" class="btn btn-primary">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos services</h2>
+            <p class="section-subtitle">Des solutions complètes pour votre piscine</p>
+
+            <div class="services-grid">
+                <!-- Service 1 : Construction -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Construction</h3>
+                    <p>Piscines en béton projeté, coque polyester, forme libre ou géométrique. Conception sur mesure
+                        selon vos envies et votre terrain.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Étude personnalisée</li>
+                        <li><i class="fas fa-check"></i> Matériaux haut de gamme</li>
+                        <li><i class="fas fa-check"></i> Garantie décennale</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 : Modification / Rénovation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Modification &amp; Rénovation</h3>
+                    <p>Redonnez vie à votre piscine : changement de liner, margelles, carrelage, système de filtration,
+                        rénovation complète.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Changement de liner</li>
+                        <li><i class="fas fa-check"></i> Rénovation esthétique</li>
+                        <li><i class="fas fa-check"></i> Mise aux normes</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 : Entretien -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Entretien &amp; Maintenance</h3>
+                    <p>Contrats d’entretien sur mesure : nettoyage, traitement de l’eau, vérification des équipements,
+                        hivernage et estivage.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Contrat annuel</li>
+                        <li><i class="fas fa-check"></i> Interventions régulières</li>
+                        <li><i class="fas fa-check"></i> Assistance 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RÉALISATIONS AVEC FILTRES ==================== -->
+    <section id="realisations" class="realisations">
+        <div class="container">
+            <h2 class="section-title">Nos réalisations</h2>
+            <p class="section-subtitle">Découvrez quelques-uns de nos projets</p>
+
+            <!-- Boutons de filtre -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> Tous
+                </button>
+                <button class="filter-btn" data-filter="construction">
+                    <a href=""></a>
+                    <i class="fas fa-swimming-pool"></i> Construction
+                </button>
+                <button class="filter-btn" data-filter="renovation">
+                    <i class="fas fa-tools"></i> Rénovation
+                </button>
+                <button class="filter-btn" data-filter="entretien">
+                    <i class="fas fa-hand-sparkles"></i> Entretien
+                </button>
+            </div>
+
+            <!-- Galerie -->
+            <div class="gallery" id="gallery">
+                <!-- Construction -->
+                <div class="gallery-item" data-category="construction">
+                    <img src="images/17.jpg" alt="Piscine à débordement" />
+                    <div class="gallery-overlay">
+                        <p>Piscine à débordement</p>
+                        <span>Construction - Béton projeté</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="construction">
+                    <img src="images/19.jpg" alt="Piscine coque" />
+                    <div class="gallery-overlay">
+                        <p>Piscine coque</p>
+                        <span>Construction - Polyester</span>
+                    </div>
+                </div>
+
+                <!-- Rénovation -->
+                <div class="gallery-item" data-category="renovation">
+                    <img src="images/18.jpg" alt="Rénovation liner" />
+                    <div class="gallery-overlay">
+                        <p>Rénovation complète</p>
+                        <span>Rénovation - Changement liner</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="renovation">
+                    <img src="images/14.jpg" alt="Rénovation margelles" />
+                    <div class="gallery-overlay">
+                        <p>Nouvelles margelles</p>
+                        <span>Rénovation - Carrelage</span>
+                    </div>
+                </div>
+
+                <!-- Entretien -->
+                <div class="gallery-item" data-category="entretien">
+                    <img src="images/18.jpg" alt="Nettoyage piscine" />
+                    <div class="gallery-overlay">
+                        <p>Nettoyage complet</p>
+                        <span>Entretien - Traitement eau</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="entretien">
+                    <img src="images/16.jpg" alt="Hivernage piscine" />
+                    <div class="gallery-overlay">
+                        <p>Hivernage</p>
+                        <span>Entretien - Maintenance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== AVANT / APRÈS INTERACTIF ==================== -->
+    <section id="avant-apres" class="avant-apres">
+        <div class="container">
+            <h2 class="section-title">Avant / Après</h2>
+            <p class="section-subtitle">Glissez le curseur pour voir la transformation</p>
+
+            <div class="avant-apres-grid">
+
+                <!-- Comparateur 1 -->
+                <div class="avant-apres-card">
+                    <h3>Rénovation piscine résidentielle</h3>
+                    <div class="comparison-slider" data-label-before="Avant" data-label-after="Après">
+                        <img class="image-before" src="images/4.jpg" alt="Avant rénovation" />
+                        <div class="image-after-wrapper">
+                            <img class="image-after" src="images/14.jpg" width="300px" alt="Après rénovation" />
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fas fa-arrows-alt-h"></i>
+                        </div>
+                        <span class="label label-before">Avant</span>
+                        <span class="label label-after">Après</span>
+                    </div>
+                    <p class="comparison-desc">
+                        Transformation complète : nouveau liner, margelles en pierre naturelle et système de filtration
+                        moderne.
+                    </p>
+                </div>
+
+                <!-- Comparateur 2 -->
+                <div class="avant-apres-card">
+                    <h3>Construction piscine à débordement</h3>
+                    <div class="comparison-slider" data-label-before="Terrain" data-label-after="Réalisation">
+                        <img class="image-before" src="images/21.jpg" alt="Avant construction" />
+                        <div class="image-after-wrapper">
+                            <img class="image-after" src="images/22.jpg" alt="Après construction" />
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fas fa-arrows-alt-h"></i>
+                        </div>
+                        <span class="label label-before">Terrain</span>
+                        <span class="label label-after">Réalisation</span>
+                    </div>
+                    <p class="comparison-desc">
+                        Création d'une piscine à débordement avec plage immergée et éclairage LED intégré.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== À PROPOS ==================== -->
+    <section id="apropos" class="apropos">
+        <div class="container">
+            <div class="apropos-grid">
+                <div class="apropos-content">
+                    <h2>LMT Services</h2>
+                    <p class="apropos-accroche">L'excellence au service de votre piscine</p>
+                    <p>
+                        Basée à Kinshasa, <strong>LMT Services</strong> est une entreprise spécialisée dans la
+                        <strong>construction</strong>, la <strong>rénovation</strong> et l'<strong>entretien</strong>
+                        de piscines. Forte de plusieurs années d'expérience, notre équipe met son savoir-faire
+                        et sa rigueur au service des particuliers et des professionnels.
+                    </p>
+                    <p>
+                        Nous accompagnons nos clients à chaque étape : de la conception sur mesure à la
+                        réalisation, en passant par l'entretien et le suivi régulier. La qualité, la transparence et
+                        la satisfaction client sont nos priorités.
+                    </p>
+                    <div class="apropos-chiffres">
+                        <div class="chiffre">
+                            <span>+50</span>
+                            <p>Piscines construites</p>
+                        </div>
+                        <div class="chiffre">
+                            <span>+100</span>
+                            <p>Rénovations réalisées</p>
+                        </div>
+                        <div class="chiffre">
+                            <span>98%</span>
+                            <p>Clients satisfaits</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+                </div>
+                <div class="apropos-image">
+                    <!-- Image d'équipe ou de chantier -->
+                    <img src="images/20.jpg" alt="Équipe LMT Services" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <p class="section-subtitle">Un projet ? Une question ? Parlons-en !</p>
+
+            <div class="contact-grid">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" placeholder="Votre nom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="votre@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" placeholder="+243 XXX XXX XXX" />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" required>
+                            <option value="">Choisir un sujet...</option>
+                            <option value="construction">Demande de construction</option>
+                            <option value="renovation">Demande de rénovation</option>
+                            <option value="entretien">Demande d'entretien</option>
+                            <option value="devis">Demande de devis</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Nos coordonnées</h3>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Kinshasa, RDC
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        +243 899 771 620
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        musanganyalewis280@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        Lun - Ven : 8h - 18h<br />
+                        Sam : 9h - 14h
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lewis musanganya" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="+243899771620" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>LMT Services</h3>
+                    <p>Construction, rénovation et entretien de piscines. L'excellence au service de votre bien-être.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#realisations">Réalisations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Restez informé</h4>
+                    <p>Recevez nos actualités et offres</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Votre email" required />
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LMT Services - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOUTON WHATSAPP FLOTTANT ==================== -->
+    <a href="https://wa.me/243970181530text=Bonjour%20LMT%20Services%2C%20je%20souhaite%20un%20devis%20pour%20ma%20piscine."
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Discutons sur WhatsApp</span>
+    </a>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
